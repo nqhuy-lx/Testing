@@ -1,6 +1,5 @@
 def hello_world():
-    print("hello world from main")
-    print("hello world from test_branch")
+    print("hello")
 
 if __name__ == "__main__":
     hello_world()
