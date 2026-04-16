@@ -1,0 +1,15 @@
+from locust import HttpUser, task, between
+
+
+class MyUser(HttpUser):
+    # wait_time = between(1, 3)  # thời gian nghỉ giữa các request
+
+    @task(1)
+    def get_courses(self):
+
+        self.client.get("/categories")
+
+    @task(2)
+    def get_lessons(self):
+
+        self.client.get("/products")
