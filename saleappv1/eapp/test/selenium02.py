@@ -35,7 +35,7 @@ for l in links:
         if elements:
             text = elements[0].text.strip()
             if text:
-                print(text).
+                print(text)
 
             else:
                 print("Empty content")
